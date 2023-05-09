@@ -15,6 +15,19 @@
 #define PLAYER2_WIN 2
 #define DRAW        3
 
+enum Dir{
+    LEFT,
+    RIGHT,
+    UP,
+    DOWN,
+    LEFT_UP,
+    LEFT_DOWN,
+    RIGHT_UP,
+    RIGHT_DOWN
+
+};
+
+
 void Menu();
 
 void Game();
