@@ -1,12 +1,6 @@
-mycode:mycode.o
-	gcc -o mycode mycode.o
-mycode.o:mycode.s
-	gcc -c mycode.s -o mycode.o
-mycode.s:mycode.i
-	gcc -S mycode.i -o mycode.s
-mycode.i:mycode.c
-	gcc -E mycode.c -o mycode.i
+mycode:mycode.c
+	gcc -o mycode mycode.c
 
 .PHONY:clean
 clean:
-	rm -f mycode mycode.i mycode.s mycode.o 
+	rm -f mycode  
