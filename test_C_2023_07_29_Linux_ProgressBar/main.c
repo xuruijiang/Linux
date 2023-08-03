@@ -2,14 +2,17 @@
 
 int main()
 {
-   int i = 10; 
-   for(; i >= 0; i--)
-   {
-        printf("%-2d\r",i);
-        fflush(stdout);
-        sleep(1);
+//   int i = 10; 
+//   for(; i >= 0; i--)
+//   {
+//        printf("%-2d\r",i);
+//        fflush(stdout);
+//        sleep(1);
+//
+//   }
+//    printf("\n"); 
 
-   }
-    printf("\n"); 
+   processbar(); 
+    
     return 0;
 }
